@@ -1,0 +1,64 @@
+---
+title: "MTCars Data Explorer"
+author: "Marco Gigante"
+date: "9/28/2025"
+output: 
+  ioslides_presentation:
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(dplyr)
+```
+
+## Slide 1: MTCars Data Explorer
+### Interactive Data Visualization Application
+
+**Welcome to the MTCars Data Explorer!**
+
+This Shiny application provides an interactive way to explore the classic MTCars dataset, allowing users to:
+
+- Select different variables from the MTCars dataset
+- Visualize data distributions through interactive histograms
+- View comprehensive summary statistics
+- Personalize their experience with custom greetings
+
+**Built with:** R, Shiny, and ggplot2 for modern data visualization
+
+## Slide 2: How It Works
+### Simple Three-Step Process
+
+**Step 1: Personalization**
+- Enter your name in the text input field
+- Receive a personalized greeting
+
+**Step 2: Variable Selection**
+- Choose from 11 different MTCars variables:
+  - Miles per Gallon, Cylinders, Displacement
+  - Horsepower, Weight, Transmission type, and more
+
+**Step 3: Explore Results**
+- View interactive histogram with professional styling
+- Examine detailed summary statistics including mean, median, quartiles
+- All outputs update automatically based on your selections
+
+## Slide 3: Live Demo
+### MTCars Data in Action
+
+```{r demo-plot, echo=TRUE, fig.height=4}
+# Plotting Miles per Gallon distribution from MTCars dataset
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(bins = 10, 
+                 fill = "steelblue", 
+                 color = "white", 
+                 alpha = 0.7) +
+  labs(title = "Distribution of MPG in MTCars Dataset",
+       x = "Miles per Gallon",
+       y = "Frequency") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, size = 14))
+```
+---
+**Real-time statistics:** Mean = `r round(mean(mtcars$mpg), 2)`, Median = `r median(mtcars$mpg)`, Range = `r min(mtcars$mpg)` - `r max(mtcars$mpg)`
