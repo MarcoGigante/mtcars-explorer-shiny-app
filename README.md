@@ -34,8 +34,8 @@ To view the pitch presentation:
 
 If you prefer to explore the project without running it locally:
 
-- 🎮 [Try the Shiny App](https://marcogigante.shinyapps.io/mtcars-explorer-shiny-app/)
-- 📑 [View the slides on RPubs](https://rpubs.com/MarcoGigante/mtcars-explorer-app)
+-  [Try the Shiny App](https://marcogigante.shinyapps.io/mtcars-explorer-shiny-app/)
+-  [View the slides on RPubs](https://rpubs.com/MarcoGigante/mtcars-explorer-app)
 
 ## Author
 
