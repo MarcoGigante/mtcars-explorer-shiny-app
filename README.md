@@ -30,6 +30,13 @@ To view the pitch presentation:
 - Open `pitch_presentation.html` in your web browser.
 - Or knit `pitch_presentation.Rmd` to HTML and publish to RPubs/GitHub Pages.
 
+## Online Demo
+
+If you prefer to explore the project without running it locally:
+
+- 🎮 [Try the Shiny App](https://marcogigante.shinyapps.io/mtcars-explorer-shiny-app/)
+- 📑 [View the slides on RPubs](https://rpubs.com/MarcoGigante/mtcars-explorer-app)
+
 ## Author
 
 Marco Gigante  
